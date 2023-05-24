@@ -59,14 +59,14 @@
   width: 242px;
   height: 354px;
   margin: 50px 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
 }
-.cardfaq img {
+.cardfaq > img {
   padding: 25px 60px;
   width: 120px;
 }
 
-.cardfaq p {
+.cardfaq > p {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -78,5 +78,5 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 7px;
+  margin: 0px 4px;
 }
