@@ -11,6 +11,7 @@ import bgFeatures from "./img/bg features.png";
 import bgFeatures2 from "./img/bg features-2.png";
 import bgFeatures3 from "./img/bg features-3.png";
 import bgFeatures4 from "./img/bg features-4.png";
+import AboutUs from "./img/aboutUs.png";
 
 export const IMAGES = {
   animasiLogin: animasiLogin,
@@ -26,4 +27,5 @@ export const IMAGES = {
   bgFeatures2: bgFeatures2,
   bgFeatures3: bgFeatures3,
   bgFeatures4: bgFeatures4,
+  AboutUs: AboutUs,
 };

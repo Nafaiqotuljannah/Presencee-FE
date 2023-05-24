@@ -1,14 +1,7 @@
 import React from "react";
-import Features from "./features/Features";
 
 const LandingMain = () => {
-  return (
-    <>
-      <section>
-        <Features />
-      </section>
-    </>
-  );
+  return <div>Landing Page</div>;
 };
 
 export default LandingMain;
