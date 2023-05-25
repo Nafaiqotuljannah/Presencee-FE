@@ -51,7 +51,7 @@ const AppFooter = () => {
           <Phone className="sosmed" size={32} weight="fill" />
         </div>
         <div className="text-right">
-          <h1 className="text-feature">Get Started</h1>
+          <h1 className="feature">Get Started</h1>
           <div className="apple">
             <p className="text-get">
               {" "}
