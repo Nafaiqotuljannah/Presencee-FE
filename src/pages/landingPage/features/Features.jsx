@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel, Col, Row } from "antd";
 import "./Features.css";
 import { FAQ, FEATURES_CONTENT } from "./Constant";
-import { IMAGES } from "../../../assets/constant";
+
 
 const Features = () => {
   const responsiveSettings = {
@@ -24,7 +24,7 @@ const Features = () => {
   };
   return (
     <>
-      <div className="title">
+      <div className="title" id="features">
         <h1>Feature Yang Tersedia</h1>
         <Row align="middle">
           <Col className="col" xs={18} md={18} lg={18} span={6} offset={3}>
