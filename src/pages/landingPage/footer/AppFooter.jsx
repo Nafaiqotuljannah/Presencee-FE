@@ -68,6 +68,9 @@ const AppFooter = () => {
           </div>
         </div>
       </div>
+      <div className="footer-bottom">
+        <h3>© 2023 Presensee. All Rights Reserved</h3>
+      </div>
     </Footer>
   );
 };

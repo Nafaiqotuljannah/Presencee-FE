@@ -81,6 +81,13 @@
   font-size: 20px;
   text-align: justify;
 }
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+  color: black;
+  font-family: "Poppins";
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
@@ -99,7 +106,6 @@
   }
 
   .text-right {
-    background-color: aqua;
     text-align: center;
   }
 
