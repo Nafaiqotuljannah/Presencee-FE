@@ -12,6 +12,7 @@ import Features2 from "./img/features2.png";
 import Features3 from "./img/features3.png";
 import Features4 from "./img/features4.png";
 import AboutUs from "./img/aboutUs.png";
+import imagecontactus from "./img/imagecontactus.png";
 
 export const IMAGES = {
   animasiLogin: animasiLogin,
@@ -28,4 +29,5 @@ export const IMAGES = {
   Features3: Features3,
   Features4: Features4,
   AboutUs: AboutUs,
+  imagecontactus : imagecontactus,
 };
