@@ -7,10 +7,10 @@ import faq4 from "./img/FAQ 4.png";
 import logo1 from "./img/logo1.png";
 import logoGram1Warna from "./img/logogram 1 warna.png";
 import logoGram from "./img/logogram.png";
-import bgFeatures from "./img/bg features.png";
-import bgFeatures2 from "./img/bg features-2.png";
-import bgFeatures3 from "./img/bg features-3.png";
-import bgFeatures4 from "./img/bg features-4.png";
+import Features from "./img/features.png";
+import Features2 from "./img/features2.png";
+import Features3 from "./img/features3.png";
+import Features4 from "./img/features4.png";
 import AboutUs from "./img/aboutUs.png";
 
 export const IMAGES = {
@@ -23,9 +23,9 @@ export const IMAGES = {
   logo1: logo1,
   logoGram1Warna: logoGram1Warna,
   logoGram: logoGram,
-  bgFeatures: bgFeatures,
-  bgFeatures2: bgFeatures2,
-  bgFeatures3: bgFeatures3,
-  bgFeatures4: bgFeatures4,
+  Features: Features,
+  Features2: Features2,
+  Features3: Features3,
+  Features4: Features4,
   AboutUs: AboutUs,
 };

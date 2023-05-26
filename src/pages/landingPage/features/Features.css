@@ -1,5 +1,7 @@
-.title h1 {
-  font-family: "Poppins";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.title {
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 42px;
@@ -8,32 +10,108 @@
   letter-spacing: 0.01em;
   text-align: center;
 }
-
-.layouttext {
-  padding: 20px 30px;
+.col2 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  position: relative;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-.layouttext img {
+.text-container1 {
+  background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.5)), url(../../../assets//img/features.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
   width: 243px;
   height: 350px;
-  background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.5));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-container2 {
+  background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.5)), url(../../../assets//img/features2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
+  width: 243px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-container3 {
+  background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.5)), url(../../../assets//img/features3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  width: 243px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.text-container4 {
+  background: linear-gradient(0deg, rgba(36, 36, 36, 0.5), rgba(36, 36, 36, 0.5)), url(../../../assets//img/features4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  width: 243px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.titleimage p {
-  font-family: "Poppins";
-  color: #2319e7;
+.text {
+  width: 159px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600px;
   font-size: 36px;
   line-height: 54px;
   text-align: center;
   letter-spacing: 0.01em;
+  color: #ffffff;
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
+@media (max-width: 600px) {
+  .text-container1 {
+    margin-left: 600px;
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 786px) {
+  .text-container1 {
+    margin-left: 400px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .col2 {
+    padding-left: 20px;
+  }
+  .text-container1,
+  .text-container2,
+  .text-container3,
+  .text-container4 {
+    padding: 0px 30px;
+  }
+  .text-container4 {
+    margin-right: 20px;
+  }
+}
 .FAQ {
   width: 100%;
   margin: 0;
@@ -41,7 +119,7 @@
 }
 
 .FAQ h1 {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 42px;
@@ -50,24 +128,33 @@
   letter-spacing: 0.01em;
   text-align: center;
 }
+.faq-item-3 p {
+  margin-top: -5px;
+}
 
-.col {
-  padding: 0px 50px;
+.faq-item-4 p {
+  margin: 0px 1px;
+  margin-top: -4px;
 }
 
 .cardfaq {
-  width: 242px;
+  width: 243px;
   height: 354px;
   margin: 50px 10px;
+  border-radius: 8px;
+  box-shadow: 1px 3px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cardfaq:hover {
   box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
 }
 .cardfaq > img {
-  padding: 25px 60px;
+  padding: 30px 70px;
   width: 120px;
 }
 
 .cardfaq > p {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 28px;
@@ -78,5 +165,15 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px 4px;
+}
+
+@media (max-width: 600px) {
+  .faq-item-1 {
+    padding-left: 750px;
+  }
+}
+@media (min-width: 600px) and (max-width: 786px) {
+  .faq-item-1 {
+    padding-left: 550px;
+  }
 }
