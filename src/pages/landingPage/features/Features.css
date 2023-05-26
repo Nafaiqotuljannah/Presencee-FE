@@ -14,7 +14,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  overflow-x: auto;
+  overflow-x: scroll;
   position: relative;
   &::-webkit-scrollbar {
     display: none;
