@@ -14,7 +14,7 @@ const Features = () => {
 
   return (
     <>
-      <div>
+      <div id="features">
         <p className="title">Feature Yang Tersedia</p>
         <Row>
           <Col className="col1" span={3}></Col>
@@ -55,7 +55,7 @@ const Features = () => {
           <Col className="col3" span={3}></Col>
         </Row>
       </div>
-      <div className="FAQ">
+      <div className="FAQ" id="help">
         <h1>Frequently Asked Questions (FAQ)</h1>
         <Row>
           <Col className="col1" span={3}></Col>
