@@ -43,9 +43,9 @@ const Features = () => {
                 </div>
               )}
             </div>
-            <div className="text-container4" onClick={() => handleContainerClick(4)}>
+            <div className="text-container4" onClick={() => handleContainerClick(3)}>
               <p className="text">Pesensi kamera</p>
-              {overlayVisible[4] && (
+              {overlayVisible[3] && (
                 <div className="overlay">
                   <p className="overlay-text">Dengan fitur ini, absensi akan lebih efektif.</p>
                 </div>
