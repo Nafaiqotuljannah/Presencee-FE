@@ -1,0 +1,43 @@
+.login-container {
+  position: relative;
+}
+
+.login-section {
+  height: 57vh;
+}
+
+.triangle-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 200px 200px 0 0;
+  border-color: #fe7968 transparent transparent transparent;
+}
+
+.triangle-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 200px 200px;
+  border-color: transparent transparent #fe7968 transparent;
+}
+
+.login-content {
+  margin-right: 90px;
+}
+
+.logo-image {
+  width: 100%;
+}
+
+.login-animation {
+  width: 600px;
+  bottom: 100;
+  left: 0;
+}

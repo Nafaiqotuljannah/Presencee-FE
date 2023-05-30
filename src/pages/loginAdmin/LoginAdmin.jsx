@@ -1,81 +1,50 @@
 import React from 'react';
-import { Button, Checkbox, Form, Input } from 'antd';
+import { Row, Col, Form, Input, Button } from 'antd';
+import { IMAGES } from '../../assets/constant';
+import './loginAdmin.css';
 
-const onFinish = (values) => {
-  console.log('Success:', values);
-};
-const onFinishFailed = (errorInfo) => {
-  console.log('Failed:', errorInfo);
-};
 const LoginAdmin = () => {
+  const onFinish = (values) => {
+    console.log('Received values of form: ', values);
+  };
+
   return (
-    <div>
-      <Form
-        name="basic"
-        labelCol={{
-          span: 8,
-        }}
-        wrapperCol={{
-          span: 16,
-        }}
-        style={{
-          maxWidth: 600,
-        }}
-        initialValues={{
-          remember: true,
-        }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
-        autoComplete="off"
-      >
-        <Form.Item
-          label="Username"
-          name="username"
-          rules={[
-            {
-              required: true,
-              message: 'Please input your username!',
-            },
-          ]}
-        >
-          <Input />
-        </Form.Item>
-
-        <Form.Item
-          label="Password"
-          name="password"
-          rules={[
-            {
-              required: true,
-              message: 'Please input your password!',
-            },
-          ]}
-        >
-          <Input.Password />
-        </Form.Item>
-
-        <Form.Item
-          name="remember"
-          valuePropName="checked"
-          wrapperCol={{
-            offset: 8,
-            span: 16,
+    <div className="login-container">
+      <div className="triangle-top-left" />
+      <div className="triangle-bottom-right" />
+      <Row justify="center" align="middle" className="login-section">
+        <Col span={8} className="login-content">
+          <img src={IMAGES.logo1} alt="Your Image" className="logo-image" />
+          <p>
+            Presensee merupakan sebuah attendance management system yang dapat mendata kehadiran seluruh mahasiswa dengan benar, dan membantu para dosen untuk melihat daftar kehadiran mahasiswa, yang dimana juga akan mengurangi banyaknya
+            fenomena titip absen.
+          </p>
+        </Col>
+        <Col
+          span={8}
+          style={{
+            boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
+            padding: '24px',
+            background: '#ffffff',
           }}
         >
-          <Checkbox>Remember me</Checkbox>
-        </Form.Item>
-
-        <Form.Item
-          wrapperCol={{
-            offset: 8,
-            span: 16,
-          }}
-        >
-          <Button type="primary" htmlType="submit">
-            Submit
-          </Button>
-        </Form.Item>
-      </Form>
+          <Form name="login-form" onFinish={onFinish}>
+            <Form.Item name="username" rules={[{ required: true, message: 'Please input your username!' }]}>
+              <Input placeholder="Input Email/NIM" />
+            </Form.Item>
+            <Form.Item name="password" rules={[{ required: true, message: 'Please input your password!' }]}>
+              <Input.Password placeholder="Input Password" />
+            </Form.Item>
+            <div style={{ borderTop: '1px solid #ccc', margin: '12px 0' }} />
+            <Form.Item>
+              <Button type="primary" htmlType="submit" style={{ width: '100%' }}>
+                Enter
+              </Button>
+            </Form.Item>
+          </Form>
+        </Col>
+      </Row>
+      <img src={IMAGES.animasiLogin} alt="animasi login" className="login-animation" />
     </div>
   );
 };
