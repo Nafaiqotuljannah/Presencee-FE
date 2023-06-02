@@ -32,11 +32,13 @@ const LoginDosen = () => {
             <Form.Item name="password" rules={[{ required: true, message: "Please input your password!" }]}>
               <Input.Password placeholder="Input Password" />
             </Form.Item>
-            <div style={{ borderTop: "1px solid #ccc", margin: "12px 0" }} />
             <Form.Item style={{ textAlign: "center" }}>
               <Button type="link" style={{ color: "#FE9486" }}>Lupa Password</Button>
             </Form.Item>
 
+            <div style={{ borderTop: "1px solid #ccc", margin: "12px 0" }} />
+            <br>
+            </br>
             <Form.Item>
               <Button type="primary" htmlType="submit" style={{ width: "100%" }}>
                 Login
