@@ -33,7 +33,7 @@ const LoginDosen = () => {
               <Input.Password placeholder="Input Password" />
             </Form.Item>
             <Form.Item style={{ textAlign: "center" }}>
-              <Button type="link" style={{ color: "#FE9486" }}>Lupa Password</Button>
+              <Button type="link" style={{ color: "#FE9486" }}>Lupa Password?</Button>
             </Form.Item>
 
             <div style={{ borderTop: "1px solid #ccc", margin: "12px 0" }} />
